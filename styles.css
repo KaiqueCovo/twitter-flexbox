@@ -6,12 +6,13 @@
 
 body {
   background-color: #e6ecf0;
-  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 }
 
-input, button {
+input,
+button {
   outline: 0;
 }
 
@@ -62,15 +63,14 @@ header#main-header div.side {
   display: flex;
 }
 
-
 header#main-header div.side input {
   height: 34px;
-  padding: 0 25px 0 12px ;
+  padding: 0 25px 0 12px;
   font-size: 12px;
-  border: 1px solid #E6ECF0;
+  border: 1px solid #e6ecf0;
   border-radius: 16px;
   color: #667581;
-  background: #F5F8FA url('/images/search.svg') no-repeat right;
+  background: #f5f8fa url("/images/search.svg") no-repeat right;
 }
 
 header#main-header div.side img {
@@ -85,7 +85,7 @@ header#main-header div.side button {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   width: 90px;
   height: 34px;
   font-weight: bold;
@@ -136,13 +136,13 @@ nav.bar .content ul li {
 }
 
 nav.bar .content ul li.active::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #3BB9E3
+  background-color: #3bb9e3;
 }
 
 nav.bar .content ul li span {
@@ -159,7 +159,7 @@ section.bar .content ul li strong {
 }
 
 nav.bar .content ul li.active strong {
-  color: #3BB9E3;
+  color: #3bb9e3;
 }
 
 nav.bar .content .actions {
@@ -170,20 +170,20 @@ nav.bar .content .actions button {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   width: 90px;
   height: 34px;
   margin-right: 15px;
   font-weight: bold;
   font-size: 14px;
-  color: #3BB9E3;
+  color: #3bb9e3;
   background-color: #fff;
-  border: 1px solid #3BB9E3;
+  border: 1px solid #3bb9e3;
   border-radius: 16px;
 }
 
 section.wrapper-content {
-  display:flex;
+  display: flex;
 }
 
 section.wrapper-content aside.profile {
@@ -201,27 +201,27 @@ section.wrapper-content aside.profile img.avatar {
 
 section.wrapper-content aside.profile h1 {
   font-size: 21px;
-  color: #1F2226;
+  color: #1f2226;
   margin-top: 10px;
 }
 
 section.wrapper-content aside.profile span {
   font-size: 14px;
-  color: #1F2226;
+  color: #1f2226;
 }
 
 section.wrapper-content aside.profile p {
   font-size: 14px;
-  color: #1F2226;
+  color: #1f2226;
   margin-top: 15px;
 }
 
-section.wrapper-content aside.profile ul{
+section.wrapper-content aside.profile ul {
   margin-top: 20px;
   list-style: none;
 }
 
-section.wrapper-content aside.profile ul.info-list li{
+section.wrapper-content aside.profile ul.info-list li {
   font-size: 14px;
   color: #657786;
 
@@ -234,9 +234,8 @@ section.wrapper-content aside.profile li:first-child {
   margin: 0;
 }
 
-section.wrapper-content aside.profile ul.info-list li img{
+section.wrapper-content aside.profile ul.info-list li img {
   margin-right: 10px;
-
 }
 
 section.wrapper-content aside.profile .widget {
@@ -248,7 +247,7 @@ section.wrapper-content aside.profile .widget strong {
   align-items: center;
 
   font-weight: normal;
-  color: #3BB9E3;
+  color: #3bb9e3;
   font-size: 14px;
 }
 
@@ -292,13 +291,101 @@ section.wrapper-content aside.profile .images ul li {
 
 section.wrapper-content .timeline {
   flex: 1;
+  background-color: #fff;
+  margin: 10px 20px 0;
 }
+
+section.wrapper-content .timeline nav {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+}
+
+section.wrapper-content .timeline nav a {
+  text-decoration: none;
+  color: #3bb9e3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+section.wrapper-content .timeline nav a:first-child {
+  margin: 0;
+}
+
+section.wrapper-content .timeline nav a.active {
+  color: #1f2226;
+}
+
+section.wrapper-content .timeline ul.tweets {
+  list-style: none;
+}
+
+section.wrapper-content .timeline ul.tweets li {
+  display: flex;
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+}
+
+section.wrapper-content .timeline ul.tweets li > img {
+  width: 48px;
+  height: 48px;
+  background-color: #667580;
+  border-radius: 50%;
+}
+
+section.wrapper-content .timeline ul.tweets li .info {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 10px;
+}
+
+section.wrapper-content .timeline ul.tweets li .info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+section.wrapper-content .timeline ul.tweets li .info strong span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #7b8b9a;
+}
+
+section.wrapper-content .timeline ul.tweets li .info p {
+  font-size: 14px;
+  color: #1f2326;
+  margin-top: 5px;
+}
+
+section.wrapper-content .timeline ul.tweets li .actions {
+  display: flex;
+  margin-top: 20px;
+}
+
+section.wrapper-content .timeline ul.tweets li .actions a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #667580;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+section.wrapper-content .timeline ul.tweets li .actions a:first-child {
+  margin-left: 0px;
+}
+
+section.wrapper-content .timeline ul.tweets li .actions a img {
+  margin-right: 5px;
+}
+
 section.wrapper-content aside.widgets {
   width: 290px;
 }
 
 section.wrapper-content aside.widgets .widget {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 15px;
   margin: 10px;
 }
@@ -309,20 +396,20 @@ section.wrapper-content aside.widgets .widget .title {
 
 section.wrapper-content aside.widgets .widget .title strong {
   font-size: 18px;
-  color: #1F2226;
+  color: #1f2226;
 }
 
 section.wrapper-content aside.widgets .widget .title a {
   position: relative;
   font-size: 12px;
-  color: #3BB9E3;
+  color: #3bb9e3;
   text-decoration: none;
   padding-left: 10px;
 }
 
 section.wrapper-content aside.widgets .widget .title a::before {
   position: absolute;
-  content: '';  
+  content: "";
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -339,7 +426,7 @@ section.wrapper-content aside.widgets .follow ul {
 section.wrapper-content aside.widgets .follow ul li {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #CCD6DD;
+  border-bottom: 1px solid #ccd6dd;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -369,7 +456,7 @@ section.wrapper-content aside.widgets .follow ul li .profile .info {
 
 section.wrapper-content aside.widgets .follow ul li .profile .info strong {
   font-size: 14px;
-  color: #1F2326;
+  color: #1f2326;
 }
 
 section.wrapper-content aside.widgets .follow ul li .profile .info strong span {
@@ -381,20 +468,20 @@ section.wrapper-content aside.widgets .follow ul li .profile .info button {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   width: 90px;
   height: 27px;
   font-weight: bold;
   font-size: 14px;
-  color: #3BB9E3;
+  color: #3bb9e3;
   background-color: #fff;
   margin-top: 4px;
-  border: 1px solid #3BB9E3;
+  border: 1px solid #3bb9e3;
   border-radius: 16px;
 }
 
 section.wrapper-content aside.widgets .follow ul li > a {
-  color: #CCD6DD;
+  color: #ccd6dd;
   font-size: 16px;
   text-decoration: none;
 }
